@@ -1,0 +1,184 @@
+﻿"ID","Title","Automation Type","Created By","Created On","Estimate","Expected Result","Forecast","Goals","Mission","Preconditions","Priority","References","Section","Section Depth","Section Description","Section Hierarchy","Steps","Steps","Steps (Additional Info)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Step)","Suite","Suite ID","Template","Type","Updated By","Updated On"
+"C1","Login"," None","Bartosz Hałasowski","10/29/2022 1:51 PM","","","","","","User is registered","Critical","","Customer login","0","","Customer login","1. User provides correct username and password
+Expected Result:
+Input field is filled with users password and username2. User press ""login"" button
+Expected Result:
+User is logged in and redirected to accounts overview","","1. 
+2.","1. Input field is filled with users password and username
+2. User is logged in and redirected to accounts overview","1. 
+2.","1. 
+2.","1. User provides correct username and password
+2. User press ""login"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 1:51 PM"
+"C2","Login with wrong username (negative)"," None","Bartosz Hałasowski","10/29/2022 1:57 PM","","","","","","","Low","","Customer login","0","","Customer login","1. User provides incorrect username
+Expected Result:
+User is not signed in, user gets message ""An internal error has occurred and has been logged""","","1.","1. User is not signed in, user gets message ""An internal error has occurred and has been logged""","1.","1.","1. User provides incorrect username","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 2:40 PM"
+"C3","User provides invalid password (negative)"," None","Bartosz Hałasowski","10/29/2022 2:00 PM","","","","","","User is registered","Low","","Customer login","0","","Customer login","1. User provides correct login and incorrect password
+Expected Result:
+User is not logged in, user gets the message: ""An internal error has occurred and has been logged.""","","1.","1. User is not logged in, user gets the message: ""An internal error has occurred and has been logged.""","1.","1.","1. User provides correct login and incorrect password","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 2:40 PM"
+"C4","User forgot login info"," None","Bartosz Hałasowski","10/29/2022 2:14 PM","","","","","","User is registered","Critical","","Customer login","0","","Customer login","1. User presses ""forgot login info?"" button
+Expected Result:
+User is redirected to ""Customer Lookup"" page, user is asked to fill up additional information (first name, last name, address, city, zip code, SSN)2. User provides additional correct information (first name, last name, address, city, zip code, SSN)
+Expected Result:
+User gets the following information: ""Your login information was located successfully. You are now logged in"", users login information (login and password) is shown, user is logged in","","1. 
+2.","1. User is redirected to ""Customer Lookup"" page, user is asked to fill up additional information (first name, last name, address, city, zip code, SSN)
+2. User gets the following information: ""Your login information was located successfully. You are now logged in"", users login information (login and password) is shown, user is logged in","1. 
+2.","1. 
+2.","1. User presses ""forgot login info?"" button
+2. User provides additional correct information (first name, last name, address, city, zip code, SSN)","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 2:14 PM"
+"C14","Swagger functionality"," None","Bartosz Hałasowski","10/29/2022 3:48 PM","","","","","","User is on ""administration"" page","Medium","","Customer login","0","","Customer login","1. User presses ""SWAGGER"" button
+Expected Result:
+User is redirected to the Swagger UI","","1.","1. User is redirected to the Swagger UI","1.","1.","1. User presses ""SWAGGER"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:48 PM"
+"C5","Registration"," None","Bartosz Hałasowski","10/29/2022 2:27 PM","","","","","","","Critical","","User registration","0","","User registration","1. User presses ""register"" button
+Expected Result:
+1. User is redirected to the register site
+2. User is asked to provide personal info (first name, last name, address, cty, state, zip code, phone #, SSN)
+3. User is asked to provide his username and password2. User provides his personal information, his username and password
+Expected Result:
+Input field is filled with provided information3. User presses the ""register"" button
+Expected Result:
+1. User is logged in and redirected to ""Welcome (user name) site
+2. User gets communicate: ""Welcome jan
+Your account was created successfully. You are now logged in.""","","1. 
+2. 
+3.","1. 1. User is redirected to the register site
+2. User is asked to provide personal info (first name, last name, address, cty, state, zip code, phone #, SSN)
+3. User is asked to provide his username and password
+2. Input field is filled with provided information
+3. 1. User is logged in and redirected to ""Welcome (user name) site
+2. User gets communicate: ""Welcome jan
+Your account was created successfully. You are now logged in.""","1. 
+2. 
+3.","1. 
+2. 
+3.","1. User presses ""register"" button
+2. User provides his personal information, his username and password
+3. User presses the ""register"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 2:43 PM"
+"C6","Registration with existing username (negative)"," None","Bartosz Hałasowski","10/29/2022 2:36 PM","","","","","","","Low","","User registration","0","","User registration","1. User presses ""register"" button
+Expected Result:
+1. User is redirected to the register site
+2. User is asked to provide personal info (first name, last name, address, cty, state, zip code, phone #, SSN)
+3. User is asked to provide his username and password2. User provides his personal information, password and existing username
+
+
+
+Expected Result:
+Input field is filled with provided information3.  User presses the ""register"" button
+Expected Result:
+1. User is not registered
+2. User gets following information: ""This username already exists.""","","1. 
+2. 
+3.","1. 1. User is redirected to the register site
+2. User is asked to provide personal info (first name, last name, address, cty, state, zip code, phone #, SSN)
+3. User is asked to provide his username and password
+2. Input field is filled with provided information
+3. 1. User is not registered
+2. User gets following information: ""This username already exists.""","1. 
+2. 
+3.","1. 
+2. 
+3.","1. User presses ""register"" button
+2. User provides his personal information, password and existing username
+
+
+
+3.  User presses the ""register"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 2:40 PM"
+"C7","Customer Care functionability"," None","Bartosz Hałasowski","10/29/2022 3:02 PM","","","","","","User is registered","Medium","","Email functionality","0","","Email functionality","1. User presses envelope icon
+Expected Result:
+1. User is redirected to ""Customer Care"" site
+2. User is asked to fill out form (name, email , phone #), user gets empty field to type mmessage
+
+
+2. User provides information (name, email, phone #), user types message
+Expected Result:
+Field is filled with provided information3. User presses ""send to customer care"" button
+Expected Result:
+User gets following information: ""Thank you (user name) A Customer Care Representative will be contacting you.""","","1. 
+2. 
+3.","1. 1. User is redirected to ""Customer Care"" site
+2. User is asked to fill out form (name, email , phone #), user gets empty field to type mmessage
+
+
+
+2. Field is filled with provided information
+3. User gets following information: ""Thank you (user name) A Customer Care Representative will be contacting you.""","1. 
+2. 
+3.","1. 
+2. 
+3.","1. User presses envelope icon
+2. User provides information (name, email, phone #), user types message
+3. User presses ""send to customer care"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:02 PM"
+"C8","Database initialization"," None","Bartosz Hałasowski","10/29/2022 3:12 PM","","","","","","User is on ""Administration"" page
+
+","Medium","","Administration","0","","Administration","1. User clicks ""initialize"" button
+Expected Result:
+Following information is shown: ""Database Initialized""","","1.","1. Following information is shown: ""Database Initialized""","1.","1.","1. User clicks ""initialize"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:12 PM"
+"C9","Database cleaning"," None","Bartosz Hałasowski","10/29/2022 3:13 PM","","","","","","User is on ""administration"" page","Medium","","Administration","0","","Administration","1. User clicks ""Clean"" button
+Expected Result:
+The following information is shown: ""Database Cleaned""","","1.","1. The following information is shown: ""Database Cleaned""","1.","1.","1. User clicks ""Clean"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:13 PM"
+"C10","JMS service status shutdown"," None","Bartosz Hałasowski","10/29/2022 3:16 PM","","","","","","User is on ""administration"" page
+JMS service status is ""Running""","Medium","","Administration","0","","Administration","1. User presses ""shutdown"" button
+Expected Result:
+JMS service status changed to ""Stopped""","","1.","1. JMS service status changed to ""Stopped""","1.","1.","1. User presses ""shutdown"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:16 PM"
+"C11","JMS service status startup"," None","Bartosz Hałasowski","10/29/2022 3:18 PM","","","","","","User is on ""administration"" page
+JMS Service status is ""Stopped""","Medium","","Administration","0","","Administration","1. User presses ""Sartup"" button
+Expected Result:
+JMS Service status changed to ""running""","","1.","1. JMS Service status changed to ""running""","1.","1.","1. User presses ""Sartup"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:18 PM"
+"C12","Data acces mode functionability"," None","Bartosz Hałasowski","10/29/2022 3:24 PM","","","","","","User is on ""Administration"" page
+Data Acces mode is set to default (JDBC)","Medium","","Administration","0","","Administration","1. User clicks one of available data access modes (SOAP, REST[JSON], REST[XML], JDBC) 
+Expected Result:
+Clicked data acces mode is selected2. User clicks ""submit"" button
+Expected Result:
+1. Following information is shown: ""Settings saved successfully.""
+2. User choice is saved","","1. 
+2.","1. Clicked data acces mode is selected
+2. 1. Following information is shown: ""Settings saved successfully.""
+2. User choice is saved","1. 
+2.","1. 
+2.","1. User clicks one of available data access modes (SOAP, REST[JSON], REST[XML], JDBC) 
+2. User clicks ""submit"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:40 PM"
+"C13","Application settings functionability"," None","Bartosz Hałasowski","10/29/2022 3:40 PM","","","","","","User is on ""Administration"" page","Medium","","Administration","0","","Administration","1. User provides following information: initial balance, minimum balance
+
+
+Expected Result:
+Provided information is filled in input field2. User chooses loan provider (JMS, web service, local) and loan processor (available funds, down payment, combined)
+Expected Result:
+1. Chosen loan provider is shown 
+2. Chosen Loan processor is shown3. User fills ""threshold%"" field
+Expected Result:
+Provided information is filled in input field4. User clicks ""submit"" button
+Expected Result:
+1. User gets following information: ""Settings saved successfully.""
+2. Provided information is saved on ""administration page""","","1. 
+2. 
+3. 
+4.","1. Provided information is filled in input field
+2. 1. Chosen loan provider is shown 
+2. Chosen Loan processor is shown
+3. Provided information is filled in input field
+4. 1. User gets following information: ""Settings saved successfully.""
+2. Provided information is saved on ""administration page""","1. 
+2. 
+3. 
+4.","1. 
+2. 
+3. 
+4.","1. User provides following information: initial balance, minimum balance
+
+
+2. User chooses loan provider (JMS, web service, local) and loan processor (available funds, down payment, combined)
+3. User fills ""threshold%"" field
+4. User clicks ""submit"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:40 PM"
+"C15","User is showing API information"," None","Bartosz Hałasowski","10/29/2022 3:53 PM","","","","","","User is on SWAGGER UI","Medium","","Swagger","0","","Swagger","1. User clicks ""show/hide"" button
+Expected Result:
+API information is displayed/ API information is hidden","","1.","1. API information is displayed/ API information is hidden","1.","1.","1. User clicks ""show/hide"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:53 PM"
+"C16","""Expand/List operations"" button functionability"," None","Bartosz Hałasowski","10/29/2022 3:57 PM","","","","","","User is on Swagger UI
+Detailed API information is hidden","Medium","","Swagger","0","","Swagger","1. User clicks ""Expand Operations"" button
+Expected Result:
+Detailed API information is shown2. User clicks ""List Operations"" button
+Expected Result:
+Detailed API information is hidden","","1. 
+2.","1. Detailed API information is shown
+2. Detailed API information is hidden","1. 
+2.","1. 
+2.","1. User clicks ""Expand Operations"" button
+2. User clicks ""List Operations"" button","Master","S1","Test Case (Steps)","Functional","Bartosz Hałasowski","10/29/2022 3:57 PM"
